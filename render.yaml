@@ -11,11 +11,11 @@ services:
         value: 12.22.0
       - key: NODE_ENV
         value: production
-      - key: ENV('CLOUDINARY_NAME')
+      - key: CLOUDINARY_NAME
         sync: false
-      - key: ENV('CLOUDINARY_KEY')
+      - key: CLOUDINARY_KEY
         sync: false
-      - key: ENV('CLOUDINARY_SECRET')
+      - key: CLOUDINARY_SECRET
         sync: false
       - key: DATABASE_URL
         fromDatabase:
@@ -23,11 +23,11 @@ services:
           property: connectionString
       - key: JWT_SECRET
         generateValue: true
-      - key: ENV('ADMIN_JWT_SECRET')
+      - key: ADMIN_JWT_SECRET
         generateValue: true
       - key: APP_KEYS
         generateValue: true
-      - key: ENV('API_TOKEN_SALT')
+      - key: API_TOKEN_SALT
         generateValue: true
 
 databases:
